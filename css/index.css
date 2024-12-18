@@ -1,0 +1,44 @@
+
+
+body {
+    margin-top: 20px;
+    background-color: powderblue;
+    color: var(--textdark);
+    font-family: "Quickstand";
+    font-size: 3vw;
+  }
+  a {
+    color: blueviolet;
+  }
+  li {
+    list-style-type: square;
+  }
+  
+  h1
+  h2{
+    text-align: left;
+  }
+  #name {
+    text-align: center;
+    color: blue;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  p {
+    color: red;
+    font-family: courier;
+    font-size: 100%;
+    text-align: left;
+  }
+  #experience-section {
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+    background-color: darkgoldenrod;
+    border-color: blueviolet;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 1cm;
+    box-shadow: 10px 10px 15px 1px;
+
+  }
