@@ -23,11 +23,12 @@ body {
     color: blue;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
+
   }
   p {
     color: red;
     font-family: courier;
-    font-size: 100%;
+    font-size: 80%;
     text-align: left;
   }
   #experience-section {
@@ -42,3 +43,27 @@ body {
     box-shadow: 10px 10px 15px 1px;
 
   }
+  img {
+    width: 700px;          
+    height: auto;          
+    border: 5px solid #ccc; 
+    border-radius: 15px;   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto;     
+    display: block;
+    transition: transform 0.3s ease
+  }
+  img:hover {
+    transform: scale(1.05); 
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  gap: 3.5em;
+  list-style-type: none;
+  position: sticky;
+ li { list-style-type: circle;}
+li:hover {
+    transform: scale(1.25); 
+}
+}
