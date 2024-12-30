@@ -14,7 +14,7 @@ body {
     list-style-type: square;
   }
   
-  h1
+  h1,
   h2{
     text-align: left;
   }
@@ -40,7 +40,7 @@ body {
     border-width: 3px;
     border-style: solid;
     border-radius: 1cm;
-    box-shadow: 10px 10px 15px 1px;
+    box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.3);
 
   }
   img {
@@ -62,8 +62,11 @@ body {
   gap: 3.5em;
   list-style-type: none;
   position: sticky;
- li { list-style-type: circle;}
-li:hover {
-    transform: scale(1.25); 
+
 }
+#nav li { 
+  list-style-type: circle;
+}
+#nav li:hover {
+  transform: scale(1.25); 
 }
