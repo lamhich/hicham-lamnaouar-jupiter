@@ -4,7 +4,7 @@ body {
     margin-top: 20px;
     background-color: powderblue;
     color: var(--textdark);
-    font-family: "Quickstand";
+    font-family: "Quickstand", sans-serif;
     font-size: 3vw;
   }
   a {
