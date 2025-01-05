@@ -4,7 +4,7 @@ body {
     margin-top: 20px;
     background-color: powderblue;
     color: var(--textdark);
-    font-family: "Quickstand";
+    font-family: "Quickstand", sans-serif;
     font-size: 3vw;
   }
   a {
@@ -14,7 +14,7 @@ body {
     list-style-type: square;
   }
   
-  h1
+  h1,
   h2{
     text-align: left;
   }
@@ -23,11 +23,12 @@ body {
     color: blue;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
+
   }
   p {
     color: red;
     font-family: courier;
-    font-size: 100%;
+    font-size: 80%;
     text-align: left;
   }
   #experience-section {
@@ -39,6 +40,33 @@ body {
     border-width: 3px;
     border-style: solid;
     border-radius: 1cm;
-    box-shadow: 10px 10px 15px 1px;
+    box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.3);
 
   }
+  img {
+    width: 700px;          
+    height: auto;          
+    border: 5px solid #ccc; 
+    border-radius: 15px;   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto;     
+    display: block;
+    transition: transform 0.3s ease
+  }
+  img:hover {
+    transform: scale(1.05); 
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  gap: 3.5em;
+  list-style-type: none;
+  position: sticky;
+
+}
+#nav li { 
+  list-style-type: circle;
+}
+#nav li:hover {
+  transform: scale(1.25); 
+}
