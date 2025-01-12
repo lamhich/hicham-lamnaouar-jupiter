@@ -1,11 +1,11 @@
-
-
+/* Mobile-first base styles */
 body {
     margin-top: 20px;
     background-color: powderblue;
     color: var(--textdark);
     font-family: "Quickstand", sans-serif;
-    font-size: 3vw;
+    font-size:16px ;
+    padding: 10px;
   }
   a {
     color: blueviolet;
@@ -70,3 +70,49 @@ body {
 #nav li:hover {
   transform: scale(1.25); 
 }
+
+
+/* Tablet styles:*/
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+      font-size: 18px;
+      padding: 20px;
+  }
+  h1 {
+    font-size: 28px; /* 1st change: Increase font size */
+    color: darkgreen; /* 2nd change: Change text color */
+}
+
+ul {
+    padding: 20px; /* 1st change: Increase padding */
+    background-color: lightblue; /* 2nd change: Change background color */
+}
+
+#name {
+    font-size: 22px; /* 1st change: Increase font size */
+    font-style: normal; /* 2nd change: Remove italic styling */
+}
+}
+
+/* Desktop styles:*/
+@media (min-width: 900px) {
+  body {
+      font-size: 20px;
+      padding: 30px;
+  }
+  h1 {
+    font-size: 32px; /* 1st change: Further increase font size */
+    color: navy (103, 236, 15, 0.336) (128, 0, 6); /* 2nd change: Change text color to navy */
+}
+
+ul {
+    padding: 30px; /* 1st change: Increase padding further */
+    background-color: lavender; /* 2nd change: Change background color to lavender */
+}   
+
+#name {
+    font-size: 26px; /* 1st change: Further increase font size */
+    color: purple; /* 2nd change: Change text color to purple */
+}
+}
+
