@@ -17,6 +17,8 @@ body {
   h1,
   h2{
     text-align: left;
+    padding: 10px;
+    margin: 10px;
   }
   #name {
     text-align: center;
@@ -25,16 +27,20 @@ body {
     font-family: 'Courier New', Courier, monospace;
 
   }
-  p {
+
+ p {
     color: red;
     font-family: courier;
     font-size: 80%;
     text-align: left;
+    padding:20px;
+    margin: 10px;
+
   }
   #experience-section {
     text-align: left;
-    padding: 20px;
-    margin: 20px;
+    padding: 5px;
+    margin: 5px;
     background-color: darkgoldenrod;
     border-color: blueviolet;
     border-width: 3px;
@@ -104,11 +110,6 @@ ul {
     font-size: 32px; /* 1st change: Further increase font size */
     color: navy (103, 236, 15, 0.336) (128, 0, 6); /* 2nd change: Change text color to navy */
 }
-
-ul {
-    padding: 30px; /* 1st change: Increase padding further */
-    background-color: lavender; /* 2nd change: Change background color to lavender */
-}   
 
 #name {
     font-size: 26px; /* 1st change: Further increase font size */
