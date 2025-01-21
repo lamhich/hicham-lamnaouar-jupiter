@@ -4,7 +4,7 @@ body {
     background-color: powderblue;
     color: var(--textdark);
     font-family: "Quickstand", sans-serif;
-    font-size:16px ;
+    font size: 10px
     padding: 10px;
   }
   a {
@@ -116,4 +116,37 @@ ul {
     color: purple; /* 2nd change: Change text color to purple */
 }
 }
+#skills {
+  margin-top: 20px;
+}
 
+#skills h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+#skills ul li {
+  background-color: #ebf1f370;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 600px) {
+  #skills ul {
+    flex-direction: column;
+  }
+
+  #skills ul li {
+    margin-bottom: 5px;
+  }
+}

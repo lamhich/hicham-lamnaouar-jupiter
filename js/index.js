@@ -7,11 +7,11 @@ body.appendChild(footer);
 const today = new Date(); 
 const year  = today.getFullYear(); 
 const copyright = document.createElement('p');
-copyright.innerHTML = `<span>&#169 ${year} Hicham<\span>`
+copyright.innerHTML = `<span>&#169 ${year} Hicham</span>`
 footer.appendChild(copyright); 
 
 // populate the skills list 
-const skillslist= ['c++', 'python', 'powerpoint'];    
+const skillslist= ['JavaScript', 'HTML','CSS', 'c++', 'python', 'powerpoint'];    
 const skillsSection = document.getElementById('skills');
 const skillsUL = skillsSection.querySelector('ul');
 
