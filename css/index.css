@@ -4,7 +4,7 @@ body {
     background-color: powderblue;
     color: var(--textdark);
     font-family: "Quickstand", sans-serif;
-    font-size:16px ;
+    font size: 10px
     padding: 10px;
   }
   a {
@@ -17,6 +17,8 @@ body {
   h1,
   h2{
     text-align: left;
+    padding: 10px;
+    margin: 10px;
   }
   #name {
     text-align: center;
@@ -25,16 +27,20 @@ body {
     font-family: 'Courier New', Courier, monospace;
 
   }
-  p {
+
+ p {
     color: red;
     font-family: courier;
     font-size: 80%;
     text-align: left;
+    padding:20px;
+    margin: 10px;
+
   }
   #experience-section {
     text-align: left;
-    padding: 20px;
-    margin: 20px;
+    padding: 5px;
+    margin: 5px;
     background-color: darkgoldenrod;
     border-color: blueviolet;
     border-width: 3px;
@@ -105,14 +111,42 @@ ul {
     color: navy (103, 236, 15, 0.336) (128, 0, 6); /* 2nd change: Change text color to navy */
 }
 
-ul {
-    padding: 30px; /* 1st change: Increase padding further */
-    background-color: lavender; /* 2nd change: Change background color to lavender */
-}   
-
 #name {
     font-size: 26px; /* 1st change: Further increase font size */
     color: purple; /* 2nd change: Change text color to purple */
 }
 }
+#skills {
+  margin-top: 20px;
+}
 
+#skills h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+#skills ul li {
+  background-color: #ebf1f370;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 600px) {
+  #skills ul {
+    flex-direction: column;
+  }
+
+  #skills ul li {
+    margin-bottom: 5px;
+  }
+}
