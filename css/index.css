@@ -1,129 +1,136 @@
-/* Mobile-first base styles */
+/* Base Styles (Mobile-First) */
 body {
-    margin-top: 20px;
-    background-color: powderblue;
-    color: var(--textdark);
-    font-family: "Quickstand", sans-serif;
-    font size: 10px
-    padding: 10px;
-  }
-  a {
-    color: blueviolet;
-  }
-  li {
-    list-style-type: square;
-  }
-  
-  h1,
-  h2{
-    text-align: left;
-    padding: 10px;
-    margin: 10px;
-  }
-  #name {
-    text-align: center;
-    color: blue;
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-
-  }
-
- p {
-    color: red;
-    font-family: courier;
-    font-size: 80%;
-    text-align: left;
-    padding:20px;
-    margin: 10px;
-
-  }
-  #experience-section {
-    text-align: left;
-    padding: 5px;
-    margin: 5px;
-    background-color: darkgoldenrod;
-    border-color: blueviolet;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 1cm;
-    box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.3);
-
-  }
-  img {
-    width: 700px;          
-    height: auto;          
-    border: 5px solid #ccc; 
-    border-radius: 15px;   
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    margin: 20px auto;     
-    display: block;
-    transition: transform 0.3s ease
-  }
-  img:hover {
-    transform: scale(1.05); 
+  margin-top: 20px;
+  background-color: powderblue;
+  color: var(--textdark);
+  font-family: "Quickstand", sans-serif;
+  font-size: 16px; 
+  padding: 10px;
 }
+
+a {
+  color: blueviolet;
+}
+
+li {
+  list-style-type: square;
+}
+
+h1, h2 {
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+}
+
+#name {
+  text-align: center;
+  color: blue;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  color: rgb(10, 10, 10);
+  font-family: courier;
+  font-size: 80%;
+  text-align: left;
+  padding: 20px;
+  margin: 10px;
+}
+
+#experience-section {
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+  background-color: darkgoldenrod;
+  border-color: blueviolet;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 1cm;
+  box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  width: 700px;
+  height: auto;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Styles */
 #nav {
   display: flex;
   flex-direction: row;
-  gap: 3.5em;
+  gap: 2.5em;
   list-style-type: none;
   position: sticky;
-
 }
-#nav li { 
+
+#nav li {
   list-style-type: circle;
 }
+
 #nav li:hover {
-  transform: scale(1.25); 
+  transform: scale(1.25);
 }
 
-/* Lesson 10*/
-/* Tablet styles:*/
+/* Lesson 10 */
+/* Tablet Styles */
 @media (min-width: 600px) and (max-width: 900px) {
   body {
-      font-size: 18px;
-      padding: 20px;
+    font-size: 18px;
+    padding: 20px;
   }
+
   h1 {
-    font-size: 28px; /* 1st change: Increase font size */
-    color: darkgreen; /* 2nd change: Change text color */
+    font-size: 28px;
+    color: darkgreen;
+  }
+
+  ul {
+    padding: 20px;
+    background-color: lightblue;
+  }
+
+  #name {
+    font-size: 22px;
+    font-style: normal;
+  }
 }
 
-ul {
-    padding: 20px; /* 1st change: Increase padding */
-    background-color: lightblue; /* 2nd change: Change background color */
-}
-
-#name {
-    font-size: 22px; /* 1st change: Increase font size */
-    font-style: normal; /* 2nd change: Remove italic styling */
-}
-}
-
-/* Desktop styles:*/
+/* Desktop Styles */
 @media (min-width: 900px) {
   body {
-      font-size: 20px;
-      padding: 30px;
+    font-size: 20px;
+    padding: 30px;
   }
+
   h1 {
-    font-size: 32px; /* 1st change: Further increase font size */
-    color: navy (103, 236, 15, 0.336) (128, 0, 6); /* 2nd change: Change text color to navy */
-}
+    font-size: 32px;
+    color: navy;
+  }
 
-#name {
-    font-size: 26px; /* 1st change: Further increase font size */
-    color: purple; /* 2nd change: Change text color to purple */
+  #name {
+    font-size: 26px;
+    color: purple;
+  }
 }
-}
-
-/* Lesson 11*/
+/* Lesson 11 */ 
+/* Skills Section Styles */
 #skills {
   margin-top: 20px;
 }
 
 #skills h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
@@ -142,7 +149,7 @@ ul {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Mobile Styles for Skills */
 @media (max-width: 600px) {
   #skills ul {
     flex-direction: column;
@@ -152,14 +159,16 @@ ul {
     margin-bottom: 5px;
   }
 }
-/* Lesson 12*/
+
+/* Lesson 12 */
+/* Form Styles */
 form {
   max-width: 500px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid hwb(300 97% 3% / 0.432);
   border-radius: 8px;
-  background-color: lightyellow ;
+  background-color: lightyellow;
 }
 
 form label {
@@ -188,7 +197,7 @@ form button:hover {
   background-color: hsl(123, 36%, 44%);
 }
 
-/* The messages section */
+/* Message Section Styles */
 #messages ul {
   list-style-type: none;
   padding: 0;
@@ -205,13 +214,47 @@ form button:hover {
 button[type="button"] {
   margin-left: 10px;
   padding: 5px 10px;
-  background-color: hsl(4, 97%, 62%);
+  background-color: hsl(4, 91%, 58%);
   color: white;
   border: none;
   border-radius: 4px;
 }
 
 button[type="button"]:hover {
-  background-color: hsl(1, 77%, 55%);
+  background-color: hsl(357, 82%, 51%);
+}
 
+/* Lesson 13 */
+/* Projects Section Styles */
+#projects {
+  margin-top: 2rem;
+}
+
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#projects li {
+  background-color: hsl(0, 41%, 97%);
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+#projects li:hover {
+  background-color: hsl(0, 15%, 94%);
+}
+
+/* Flexbox Grid for Project List */
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#projects li {
+  flex: 1 1 30%; /* Each list item takes up 30% of the width */
+  min-width: 200px; /* Minimum width to maintain a decent layout */
 }
